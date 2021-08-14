@@ -1,8 +1,11 @@
 <div *ngIf="messageService.messages.length">
-
   <h2>Messages</h2>
-  <button class="clear"
-          (click)="messageService.clear()">clear</button>
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
+  <button class="clear" (click)="openModal('custom-modal-1')">clear</button>
+  <div *ngFor="let message of messageService.messages">{{ message }}</div>
 </div>
+
+<app-modal id="custom-modal-1">
+  <h1>Please choose button to cancel or confirm</h1>
+  <button class="cancel" (click)="closeModal('custom-modal-1')">Cancel</button>
+  <button (click)="confirm('custom-modal-1')">Confirm</button>
+</app-modal>

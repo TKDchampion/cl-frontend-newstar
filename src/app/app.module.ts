@@ -14,6 +14,7 @@ import { HeroService } from "./hero.service";
 import { MessageService } from "./message.service";
 import { MessagesComponent } from "./messages/messages.component";
 import { BonusPointModule } from "./bonus-point/bonus-point.module";
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,7 @@ import { BonusPointModule } from "./bonus-point/bonus-point.module";
     }),
     BonusPointModule,
   ],
-  declarations: [AppComponent, HeroDetailComponent, MessagesComponent],
+  declarations: [AppComponent, HeroDetailComponent, MessagesComponent, ModalComponent],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent],
 })

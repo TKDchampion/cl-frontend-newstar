@@ -7,7 +7,9 @@ h2 {
 body {
   margin: 2em;
 }
-body, input[text], button {
+body,
+input[text],
+button {
   color: crimson;
   font-family: Cambria, Georgia;
 }
@@ -32,4 +34,8 @@ button:disabled {
 button.clear {
   color: #888;
   margin-bottom: 12px;
+}
+
+.cancel {
+  color: #aaa;
 }
