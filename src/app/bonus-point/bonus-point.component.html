@@ -9,54 +9,99 @@
   </ul>
   <div class="preview-img">
     <p>示意圖:</p>
-    <img src="assets/imgs/flex-9-grid-cell-sample.png" alt="">
+    <img src="assets/imgs/flex-9-grid-cell-sample.png" alt="" />
   </div>
   <p class="keyword">你的實作結果:</p>
-  <br/>
-  <br/>
+  <div class="nine-box">
+    <div class="top">
+      <div class="item"><h1>f1</h1></div>
+      <div class="item"><h1>f2</h1></div>
+      <div class="item"><h1>f3</h1></div>
+    </div>
+    <div class="middle">
+      <div class="item"><h1>f4</h1></div>
+      <div class="item"></div>
+      <div class="item"><h1>f6</h1></div>
+    </div>
+    <div class="bottom">
+      <div class="item"><h1>f7</h1></div>
+      <div class="item"><h1>f8</h1></div>
+      <div class="item"><h1>f9</h1></div>
+    </div>
+  </div>
+  <br />
+  <br />
 </section>
-<hr/>
-<br/>
-<br/>
-<br/>
+<hr />
+<br />
+<br />
+<br />
 <section>
   <p class="title">題目 : 請用Css Grid建立示意圖的內容</p>
   <div class="preview-img">
     <p>示意圖:</p>
-    <img src="assets/imgs/grid-colum-row-span-sample.png" alt="">
+    <img src="assets/imgs/grid-colum-row-span-sample.png" alt="" />
   </div>
   <p class="keyword">你的實作結果:</p>
-  <br/>
-  <br/>
+  <div class="grid-box">
+    <div class="grid-box-columns">
+      <div><h1>g1</h1></div>
+      <div class="line-top"><h1>g6</h1></div>
+    </div>
+    <div class="grid-box-columns">
+      <div>
+        <div class="grid-box-chid">
+          <div class="line-right">
+            <div class="line-bottom"><h1>g2</h1></div>
+            <div><h1>g4</h1></div>
+          </div>
+          <div>
+            <div class="line-bottom"><h1>g3</h1></div>
+            <div><h1>g5</h1></div>
+          </div>
+        </div>
+      </div>
+      <div><h1>g7</h1></div>
+    </div>
+  </div>
+  <br />
+  <br />
 </section>
-<hr/>
-<br/>
-<br/>
-<br/>
+<hr />
+<br />
+<br />
+<br />
 <section>
   <p class="title">題目 : 資料處理</p>
   <p>情境 : 今天從API取得了一些資料，但我們需要自行轉換成頁面需要的資料格式:</p>
   <p>請至bonus-point.component.ts裡的answerJs1()，實作你的解決方案</p>
-  <br/>
+  <br />
   <button class="keyword" (click)="answerJs1()">你的實作結果</button>
-  <br/>
-  <br/>
+  <br />
+  <br />
 </section>
-<hr/>
-<br/>
-<br/>
-<br/>
+<hr />
+<br />
+<br />
+<br />
 <section>
   <p class="title">題目 : 共用Cookie</p>
-  <p>情境 : 請自行新增一個Cookie(Key:ck1)，並在以下兩個不同的URL下共用相同的Cookie:</p>
+  <p>
+    情境 :
+    請自行新增一個Cookie(Key:ck1)，並在以下兩個不同的URL下共用相同的Cookie:
+  </p>
   <ul>
     <li>
       kei.careline.host/bonusPoint
-      <button class="keyword" (click)="redirectToKeiPage()">前往kei的網站</button>
+      <button class="keyword" (click)="redirectToKeiPage()">
+        前往kei的網站
+      </button>
     </li>
     <li>
       kei.careline.host/bonusPoint
-      <button class="keyword" (click)="redirectToAnnPage()">前往ann的網站</button>
+      <button class="keyword" (click)="redirectToAnnPage()">
+        前往ann的網站
+      </button>
     </li>
   </ul>
   <p>請至bonus-point.component.ts裡的answerCookie1()，實作你的解決方案</p>
@@ -64,26 +109,29 @@
   <ul class="keyword">
     <li>只能自行新增一個Cookie</li>
   </ul>
-  <br/>
-  <br/>
+  <br />
+  <br />
   <button class="keyword" (click)="answerCookie1()">你的實作方式</button>
-  <br/>
-  <br/>
+  <br />
+  <br />
 </section>
-<hr/>
-<br/>
-<br/>
-<br/>
+<hr />
+<br />
+<br />
+<br />
 <section>
   <p class="title">題目 : Rxjs</p>
-  <p>情境 : API的執行是有順序性的，需等上一個API取得Http Repsonse，才能進行下一個Http Request</p>
+  <p>
+    情境 : API的執行是有順序性的，需等上一個API取得Http
+    Repsonse，才能進行下一個Http Request
+  </p>
   <p>請至bonus-point.component.ts裡的answerRxjs1()，實作你的解決方案</p>
   <div class="preview-img">
-    <img src="assets/imgs/rxjs1.png" alt="">
+    <img src="assets/imgs/rxjs1.png" alt="" />
   </div>
-  <br/>
-  <br/>
+  <br />
+  <br />
   <button class="keyword" (click)="answerRxjs1()">你的實作方式</button>
-  <br/>
-  <br/>
+  <br />
+  <br />
 </section>
