@@ -19,6 +19,14 @@ export class HeroService {
     private messageService: MessageService
   ) {}
 
+  // get JSON data
+  getJson() {
+    return this.http.get("api/json").pipe(
+      tap((jsonItem) => this.log(`fetched Json data`)),
+      catchError(this.handleError("getJson", []))
+    );
+  }
+
   /** GET heroes from the server */
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl).pipe(

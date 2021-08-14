@@ -1,7 +1,9 @@
 <h1>{{ title }}</h1>
 <nav>
-  <a routerLink="/cl-dashboard">Dashboard</a>
-  <a routerLink="/cl-heroes">Heroes{{ heroQuantity }}</a>
+  <a routerLink="/cl-dashboard">{{ jsonData && jsonData.dashboard }}</a>
+  <a routerLink="/cl-heroes"
+    >{{ jsonData && jsonData.heroes }}{{ heroQuantity }}</a
+  >
   <a routerLink="/cl-bonusPoint">bonusPoint</a>
 </nav>
 <router-outlet></router-outlet>
