@@ -53,26 +53,27 @@ h4 {
 .grid-pad > [class*="col-"]:last-of-type {
   padding-right: 20px;
 }
+/* @media (max-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .module {
+    min-width: 60px;
+  }
+} */
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
 @media (max-width: 600px) {
   .module {
     font-size: 10px;
     max-height: 75px;
-  }
-}
-@media (max-width: 768px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .module {
-    min-width: 60px;
-  }
-}
-@media (max-width: 850px) {
-  .grid {
-    margin: 0;
-  }
-  .module {
-    min-width: 60px;
   }
 }
