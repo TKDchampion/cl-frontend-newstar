@@ -24,6 +24,18 @@ export class BonusPointComponent implements OnInit {
 
   answerCookie1() {
     //ToDo..
+    // I haven't succeeded yet, but I know that different subdomains can be set using ";domain=.XXX".
+    const cookieName = "key";
+    const cookieValue = "ck1";
+    const cookieDate = new Date();
+    cookieDate.setMonth(cookieDate.getMonth() + 12);
+    document.cookie =
+      cookieName +
+      "=" +
+      cookieValue +
+      ";expires=" +
+      cookieDate +
+      `;domain=.careline.localhost;path=/`;
   }
 
   answerRxjs1() {
